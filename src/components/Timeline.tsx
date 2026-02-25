@@ -88,14 +88,14 @@ function Timeline() {
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid white' }}
           >
-            <h3 className="vertical-timeline-element-title">Undergraduate Research Assistant</h3>
-            <h4 className="vertical-timeline-element-subtitle">UW Graphics Group · Madison, WI</h4>
-            <p>
-              Contributing to research on data visualization design and interpretation, exploring how NLP and LLMs can generate effective visualization guidelines. 
-              Developing and evaluating pipelines that analyze written descriptions, user feedback, and visualization metadata. 
-              Using LLMs for summarization, pattern extraction, and recommendation generation to support automated guideline creation, 
-              while collaborating with graduate researchers at the intersection of HCI, data visualization, and machine learning.
-            </p>
+            <h3 className="vertical-timeline-element-title">UW Graphics Group · Madison, WI</h3>
+            <h4 className="vertical-timeline-element-subtitle">Directed Study</h4>
+            <ul>
+              <li>Conduct research on guideline regularization for visualization design.</li>
+              <li>Analyze a large, heterogeneous corpus of visualization guidelines to identify structural gaps limiting standardization and automation.</li>
+              <li>Design and evaluate an LLM-assisted annotation pipeline for scalable guideline processing.</li>
+              <li>Develop and refine a multidimensional representation schema to support synthesis and tooling.</li>
+            </ul>
           </VerticalTimelineElement>
 
           {/* Meta Internship */}
@@ -107,15 +107,38 @@ function Timeline() {
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid white' }}
           >
-            <h3 className="vertical-timeline-element-title">AI/Data Science & Full-Stack Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Meta · Menlo Park, CA</h4>
-            <p>
-              Contributing to enterprise-grade AI and data systems through full-stack development and LLM integration. 
-              Working on tools that combine data analytics, backend automation, and GenAI workflows to enhance product intelligence and user experience.
-            </p>
+            <h3 className="vertical-timeline-element-title">Meta · Menlo Park, CA</h3>
+            <h4 className="vertical-timeline-element-subtitle">AI/Data Science & Full-Stack Intern</h4>
+            <ul>
+              <li>Designed and deployed an end-to-end production ML pipeline for unstructured text classification using LLaMA models.</li>
+              <li>Improved robustness to noisy inputs and reduced misclassification by ~30% in deployment feedback analysis.</li>
+              <li>Built a React-based analytics dashboard integrated with Meta’s internal stack.</li>
+              <li>Defined data models and APIs with cross-functional partners, enabling 12+ teams to act on 100K+ weekly datapoints.</li>
+              <li>Developed a scalable LLaMA-based agent framework for multi-step task execution.</li>
+              <li>Refactored a large codebase into a compact, maintainable architecture with memory and agent chaining support.</li>
+            </ul>
           </VerticalTimelineElement>
 
-          
+          {/* Jumpshot */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="March 2024 – April 2025"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid white' }}
+          >
+            <h3 className="vertical-timeline-element-title">Jumpshot · Fountain Valley, CA (hybrid)</h3>
+            <h4 className="vertical-timeline-element-subtitle">Technical Business Analyst (Part-time)</h4>
+            <ul>
+              <li>Contributed to Jumpshot, a mobile basketball training application.</li>
+              <li>Acted as primary liaison between coaches and engineers, translating product requirements into technical implementation plans.</li>
+              <li>Implemented frontend and backend features across the application stack.</li>
+              <li>Supported CI/CD workflows and analytics integrations.</li>
+              <li>Led testing and QA efforts, resolving issues pre-release to improve performance and user experience.</li>
+            </ul>
+          </VerticalTimelineElement>
+
           {/* Education */}
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -126,14 +149,16 @@ function Timeline() {
             contentArrowStyle={{ borderRight: '7px solid white' }}
           >
             <h3 className="vertical-timeline-element-title">
-              Computer Science B.S. & Statistics B.S.
+              University of Wisconsin–Madison
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              University of Wisconsin–Madison · Madison, WI
+              Computer Science B.S. & Statistics B.S.
             </h4>
-            <p>
-              Junior standing.
-            </p>
+            <ul>
+              <li>Undergraduate dual major in Computer Science and Statistics.</li>
+              <li>Directed study with UW Graphics Group focused on visualization design guideline research.</li>
+              <li>Coursework includes Algorithms, Machine Learning, Artificial Intelligence, Computer Organization, Applied Regression Analysis, and Mathematical Statistics.</li>
+            </ul>
           </VerticalTimelineElement>
 
           {/* InnoWinds Internship */}
@@ -145,35 +170,34 @@ function Timeline() {
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid white' }}
           >
-            <h3 className="vertical-timeline-element-title">Software Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">InnoWinds Inc · Fountain Valley, CA </h4>
-            <p>
-              Contributed to the development of PlexusHR, a next-generation hiring marketplace. 
-              Designed and implemented a resume parser module to automate candidate data extraction, 
-              reducing manual effort and improving efficiency. 
-              Built a Tableau dashboard providing insights into candidate profiles, skill distributions, and education trends. 
-              Strengthened the company’s automation pipeline through Python-based data extraction and analysis.
-            </p>
+            <h3 className="vertical-timeline-element-title">InnoWinds Inc · Remote</h3>
+            <h4 className="vertical-timeline-element-subtitle">Software Intern</h4>
+            <ul>
+              <li>Contributed to development of PlexusHR, a hiring marketplace platform.</li>
+              <li>Designed and implemented a resume parser to automate candidate data extraction.</li>
+              <li>Reduced manual processing effort and improved pipeline efficiency.</li>
+              <li>Built Tableau dashboards analyzing candidate skills, education trends, and profile distributions.</li>
+              <li>Enhanced automation workflows through Python-based data extraction and analysis.</li>
+            </ul>
           </VerticalTimelineElement>
 
           {/* Advent Global Solutions Internship */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="May 2022 – Sep 2022"
+            date="May 2022 – Aug 2022"
             iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid white' }}
           >
-            <h3 className="vertical-timeline-element-title">Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Advent Global Solutions · Fountain Valley, CA </h4>
-            <p>
-              Assisted in technical recruitment and IT consulting operations. 
-              Managed resume screening, background verification, and internal candidate databases. 
-              Supported the hiring pipeline by sourcing and evaluating candidates, improving efficiency and communication across client projects.
-            </p>
+            <h3 className="vertical-timeline-element-title">Advent Global Solutions · Remote</h3>
+            <h4 className="vertical-timeline-element-subtitle">Intern</h4>
+            <ul>
+              <li>Supported technical recruitment and IT consulting operations.</li>
+              <li>Conducted resume screening and managed candidate data workflows.</li>
+              <li>Coordinated across client hiring pipelines to streamline placement processes.</li>
+            </ul>
           </VerticalTimelineElement>
-
 
         </VerticalTimeline>
       </div>

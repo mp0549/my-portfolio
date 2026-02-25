@@ -49,6 +49,33 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 }
 
+@keyframes navUnderlineDraw {
+  0%   { width: 0;    opacity: 1; }
+  55%  { width: 100%; opacity: 1; }
+  100% { width: 100%; opacity: 0; }
+}
+
+.nav-label {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+  }
+
+  &--active::after {
+    animation: navUnderlineDraw 0.5s ease-out forwards;
+  }
+}
+
 .navigation-bar-responsive {
   span, p {
     color: #0d1116;

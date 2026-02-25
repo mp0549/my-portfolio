@@ -9,24 +9,15 @@
 
   button {
     float: right;
-    background-color: white;
-    color: #050f0b;
-  }
-
-  button:hover {
-    background-color: #5000ca;
-    color: white;
-  }
-
-  fieldset {
-    background-color: white;
   }
 }
 
-label {
+
+.contact-form label {
   font-size: 1.2rem;
   font-family: 'DomaineDispNar-Medium', sans-serif;
 }
+
 
 .form-flex {
   display: flex;
@@ -46,3 +37,63 @@ form {
   width: 100% !important;
   margin-bottom: 15px !important;
 }
+
+/* Format indicator (email / phone) displayed in the TextField end adornment */
+.format-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Light mode color tweak */
+.main-container.light-mode .format-indicator {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* ===== MUI TextField dark-mode fixes ===== */
+
+.main-container.dark-mode {
+  /* Input text */
+  .MuiOutlinedInput-root .MuiOutlinedInput-input {
+    color: #fff;
+  }
+
+  /* Placeholder */
+  .MuiOutlinedInput-root .MuiOutlinedInput-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+  }
+
+  /* Outline */
+  .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* Hover */
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  /* Focus */
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #1976d2;
+  }
+
+  .MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .MuiInputLabel-root:not(.Mui-focused):not(.MuiInputLabel-shrink) {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .MuiOutlinedInput-input:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+

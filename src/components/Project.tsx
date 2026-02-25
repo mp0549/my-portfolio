@@ -1,15 +1,12 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+import ssc from '../assets/images/ssc.png';
+import covid from '../assets/images/covid.png';
+import healthapp from '../assets/images/Health App.png';
+import interviewprep from '../assets/images/interviewprep.jpeg';
+import mariokart from '../assets/images/mariokartgameplay.jpg';
 import '../assets/styles/Project.scss';
+
+
 
 function Project() {
     return(
@@ -17,54 +14,112 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
+                <a href="https://interview-prep-platform-qxx5.onrender.com/" target="_blank" rel="noreferrer"><img src={interviewprep} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://interview-prep-platform-qxx5.onrender.com/" target="_blank" rel="noreferrer"><h2>Interview Prep Platform</h2></a>
+
+                <p className="tech">Python · Flask · SQLite · SQLAlchemy · HTML/CSS/JS · Claude API</p>
+
+                <p>
+                Built a full-stack AI interview prep platform that generates personalized
+                questions from resumes and job descriptions and provides structured performance feedback.
+                </p>
+
+                <ul className="projects ul">
+                <li>Designed REST APIs for interview sessions, questions, and responses</li>
+                <li>Integrated Claude API for dynamic question generation and answer grading</li>
+                <li>Implemented persistent storage for interview history using SQLite</li>
+                <li>Built a multi-step frontend flow for interview practice and results review</li>
+                </ul>
+
+                <p className="links">
+                <a href="https://github.com/mp0549/ClaudeHacks-interview-prep-platform">GitHub</a> · <a href="https://interview-prep-platform-qxx5.onrender.com/">Live Demo</a>
+                </p>
+            </div>
+
+            <div className="project">
+                <a href="https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large" target="_blank" rel="noreferrer"><img src={covid} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large" target="_blank" rel="noreferrer"><h2>Covid-19 Vaccine Stance Classification</h2></a>
+                
+                <p className="tech">Python · PyTorch · Hugging Face · FLAN-T5 · LoRA · bitsandbytes · scikit-learn</p>
+
+                <p>
+                Built a stance classification system to label tweets as in-favor, against, or neutral-or-unclear toward COVID-19 vaccination under tight data and GPU constraints.
+                </p>
+
+                <ul className="projects ul">
+                <li>Fine-tuned FLAN-T5-Large using LoRA adapters, training on limited resources</li>
+                <li>Designed a curriculum learning strategy to stabilize 3-way stance classification</li>
+                <li>Mitigated failure modes including neutral collapse, sarcasm, and more</li>
+                <li>Achieved improved macro-F1 and neutral recall compared to zero-shot and standard fine-tuning baselines</li>
+                </ul>
+
+                <p className="links">
+                <a href="https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large">GitHub</a>
+                </p>
             </div>
             <div className="project">
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
-                <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
+                <a href="https://github.com/mp0549/CheeseHacks2024MarioKart" target="_blank" rel="noreferrer"><img src={mariokart} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/mp0549/CheeseHacks2024MarioKart" target="_blank" rel="noreferrer"><h2>Gesture-based Game Control</h2></a>
+                <p className="tech">Tech: Python · OpenCV · MediaPipe · Computer Vision</p>
+
+                <p>
+                Built a real-time, gesture-based controller that allows players to control Mario Kart using hand movements instead of a physical controller.
+                </p>
+
+                <ul className="projects ul">
+                <li>Implemented real-time hand tracking and gesture recognition</li>
+                <li>Mapped hand gestures to in-game controls such as steering, acceleration, and item usage</li>
+                <li>Supported multiplayer by splitting camera feed for independent gesture control</li>
+                <li>Optimized for low-latency input to ensure smooth and responsive gameplay</li>
+                </ul>
+                <p className="links">
+                <a href="https://github.com/mp0549/CheeseHacks2024MarioKart">GitHub</a> · <a href="https://drive.google.com/file/d/1LpZbgyQJinmTIPZYtY_HWPHl5WWt8byf/view?usp=sharing">Demo Video</a>
+                </p>
             </div>
             <div className="project">
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Astro Raiders</h2></a>
-                <p>Developed and released a 2D shooting game with C# and Unity. This project is hosted on the Itch.io public marketplace.</p>
+                <a href="https://github.com/mp0549/Health-App" target="_blank" rel="noreferrer"><img src={healthapp} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/mp0549/Health-App" target="_blank" rel="noreferrer"><h2>Health App</h2></a>
+                
+                <p className="tech">Tech: React Native · Python · SQLite · Mobile App Development</p>
+
+                <p>
+                Designing and developing a beginner-friendly mobile health and fitness app focused on customizable workouts and accessibility.
+                </p>
+
+                <ul className="projects ul">
+                <li>Built a React Native frontend with modular components for workout creation and tracking</li>
+
+                <li>Designed backend logic using Python with local-first data storage via SQLite</li>
+
+                <li>Planned a scalable full-stack architecture with future cloud sync support</li>
+                <li>Researching AI-driven workout recommendations based on user goals, availability, and preferences</li>
+
+                </ul>
+                <p className="links">
+                Status: Actively in development
+                </p>
             </div>
             <div className="project">
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2>Datum: Integrated Learning Platform</h2></a>
-                <p>This is an online educational platform that provides high-quality, data science-focused learning resources in the Japanese language. I created the entire platform from scratch using Ruby on Rails.</p>
-            </div>
-            <div className="project">
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><h2>WeManage: Real Estate Asset Management</h2></a>
-                <p>This mobile application allows realtors in Japan to securely manage their property information and view future income predictions. This app is built with Ruby on Rails and JavaScript.</p>
-            </div>
-            <div className="project">
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><img src={mock05} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><h2>COVID-19 Case Management</h2></a>
-                <p>Built official charts for COVID/vaccination tracking for an educational institution using JavaScript and the Google Sheets API v4. The dashboard served the university's leadership in their decision-making processes.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><img src={mock04} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><h2>Multiple Regression Property Analysis</h2></a>
-                <p>Analyzed the real estate market in Japan and predicted property prices by implementing statistical methods such as OLS and multi-regression analysis. This project leveraged Python and various libraries such as Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
-            </div>
-            <div className="project">
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><h2>Programs of Study</h2></a>
-                <p>Designed and developed a custom component for a CMS-based platform (e.g., 'Brightspot') using Java, Handlebars, and LESS. University students can find their majors of interest through this module.</p>
-            </div>
-            <div className="project">
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><h2>Transfer Evaluation Matrix</h2></a>
-                <p>Created an interactive CSV table generator with Java, Handlebars, and LESS. This project helps transfer students to quickly identify eligible credits.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><h2>Submeowrine</h2></a>
-                <p>Developed and released an Android mobile application using Java and Android Studio that runs a 2D shooting game.</p>
+                <a href="http://studentsuccessclub.org/" target="_blank" rel="noreferrer"><img src={ssc} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="http://studentsuccessclub.org/" target="_blank" rel="noreferrer"><h2>Student Success Club</h2></a>
+                <p className="tech">Tech: React · Javascript · Node.js · APIs   · Full Stack App Development</p>
+
+                <p>
+                Designing and developing a beginner-friendly mobile health and fitness app focused on customizable workouts and accessibility.
+                </p>
+
+                <ul className="projects ul">
+                <li>Designed and built a React website to advertise services, facilitate student-tutor connections, and improve accessibility</li>
+
+                <li>Developed full-stack registration and contact forms, storing submissions in a database and enabling automated tutor-student matching</li>
+
+                <li>Implemented real-time notifications to phone and email for new submissions</li>
+                <li>Led a team of volunteer tutors and promoted peer support and educational equity through free, community-driven resources</li>
+
+                </ul>
+                <p className="links">
+                <a href="http://studentsuccessclub.org/">Website</a> · <a href="https://github.com/mp0549/landing-NGO">GitHub</a>
+                </p>
             </div>
         </div>
     </div>
