@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.aa9a4396.css",
-    "main.js": "/my-portfolio/static/js/main.04b94110.js",
+    "main.js": "/my-portfolio/static/js/main.13dbceb1.js",
     "static/js/453.b05d8aa5.chunk.js": "/my-portfolio/static/js/453.b05d8aa5.chunk.js",
     "static/media/bg-light.png": "/my-portfolio/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/my-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/waisi.png": "/my-portfolio/static/media/waisi.2ff745db268e643c8f70.png",
     "static/media/baja.png": "/my-portfolio/static/media/baja.d1d68b5c12d2ab9756c0.png",
     "static/media/ssc.png": "/my-portfolio/static/media/ssc.8b7a1b9d3503e0b1c8b1.png",
+    "static/media/influencedashboard.png": "/my-portfolio/static/media/influencedashboard.eff5f67b4e3b3da79514.png",
     "static/media/covid.png": "/my-portfolio/static/media/covid.041a3be6f52f9dadb9ac.png",
     "static/media/mariokartgameplay.jpg": "/my-portfolio/static/media/mariokartgameplay.196a3113ad2403f48d0b.jpg",
     "static/media/Health App.png": "/my-portfolio/static/media/Health App.68045b027711b7ea2005.png",
@@ -17,11 +18,11 @@
     "static/media/wa_autonomous.png": "/my-portfolio/static/media/wa_autonomous.c26dcd4c64a17952d66a.png",
     "index.html": "/my-portfolio/index.html",
     "main.aa9a4396.css.map": "/my-portfolio/static/css/main.aa9a4396.css.map",
-    "main.04b94110.js.map": "/my-portfolio/static/js/main.04b94110.js.map",
+    "main.13dbceb1.js.map": "/my-portfolio/static/js/main.13dbceb1.js.map",
     "453.b05d8aa5.chunk.js.map": "/my-portfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa9a4396.css",
-    "static/js/main.04b94110.js"
+    "static/js/main.13dbceb1.js"
   ]
 }
