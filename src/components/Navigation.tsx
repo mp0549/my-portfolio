@@ -80,6 +80,30 @@ function Navigation({parentToChild, modeChange}: any) {
             </ListItemButton>
           </ListItem>
         ))}
+        <ListItem disablePadding sx={{ mt: 1, px: 2 }}>
+          <Button
+            component="a"
+            href="https://mp0549.github.io/lab/"
+            target="_blank"
+            rel="noopener noreferrer"
+            fullWidth
+            sx={{
+              color: '#fff',
+              border: '2px solid #a855f7',
+              borderRadius: '8px',
+              fontWeight: 'bold',
+              fontSize: '1rem',
+              textTransform: 'none',
+              background: 'linear-gradient(135deg, #5000ca 0%, #a855f7 100%)',
+              boxShadow: '0 0 12px #a855f7',
+              '&:hover': {
+                background: 'linear-gradient(135deg, #6d28d9 0%, #c084fc 100%)',
+              },
+            }}
+          >
+            Visit The Lab!
+          </Button>
+        </ListItem>
       </List>
     </Box>
   );
@@ -111,6 +135,35 @@ function Navigation({parentToChild, modeChange}: any) {
                 </span>
               </Button>
             ))}
+            <Button
+              component="a"
+              href="https://mp0549.github.io/lab/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="lab-button"
+              sx={{
+                ml: 1,
+                color: '#fff',
+                border: '2px solid #a855f7',
+                borderRadius: '8px',
+                px: 2,
+                py: 0.5,
+                fontWeight: 'bold',
+                fontSize: '1rem',
+                textTransform: 'none',
+                background: 'linear-gradient(135deg, #5000ca 0%, #a855f7 100%)',
+                boxShadow: '0 0 12px #a855f7, 0 0 4px #5000ca',
+                animation: 'labPulse 2s ease-in-out infinite',
+                '&:hover': {
+                  background: 'linear-gradient(135deg, #6d28d9 0%, #c084fc 100%)',
+                  boxShadow: '0 0 20px #a855f7, 0 0 8px #5000ca',
+                  transform: 'scale(1.05)',
+                  transition: 'all 0.2s ease',
+                },
+              }}
+            >
+              Visit The Lab!
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>

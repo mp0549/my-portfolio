@@ -49,6 +49,11 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 }
 
+@keyframes labPulse {
+  0%, 100% { box-shadow: 0 0 10px #a855f7, 0 0 4px #5000ca; }
+  50%       { box-shadow: 0 0 20px #a855f7, 0 0 10px #5000ca; }
+}
+
 @keyframes navUnderlineDraw {
   0%   { width: 0;    opacity: 1; }
   55%  { width: 100%; opacity: 1; }

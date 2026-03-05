@@ -4,6 +4,7 @@ import covid from '../assets/images/covid.png';
 import healthapp from '../assets/images/Health App.png';
 import interviewprep from '../assets/images/interviewprep.jpeg';
 import mariokart from '../assets/images/mariokartgameplay.jpg';
+import influencedashboard from '../assets/images/influencedashboard.png';
 import '../assets/styles/Project.scss';
 
 
@@ -13,6 +14,35 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
+
+            <div className="project">
+                <a href="https://github.com/mp0549/influence-proxy-dashboard" target="_blank" rel="noreferrer">
+                    <img src={influencedashboard} className="zoom" alt="thumbnail" width="100%"/>
+                </a>
+                <a href="https://github.com/LCodingX/generalization-bet" target="_blank" rel="noreferrer">
+                    <h2>Influence Proxy Dashboard</h2>
+                </a>
+
+                <p className="tech">Next.js · FastAPI · PyTorch · HuggingFace · PEFT · Modal · Supabase</p>
+
+                <p>
+                Built a full-stack research tool that lets AI safety researchers fine-tune 
+                language models and see exactly which training examples shaped the model's behavior — 
+                turning fine-tuning from a black box into an auditable process.
+                </p>
+
+                <ul className="projects ul">
+                <li>Computed influence scores live during training using gradient dot products, with no checkpoint storage required</li>
+                <li>Ran serverless A100 GPU jobs on Modal with async status updates streamed to the frontend in real time</li>
+                <li>Visualized per-example influence as animated heatmaps and ranked leaderboards for intuitive data auditing</li>
+                <li>Designed a full job pipeline from data upload through fine-tuning to influence score delivery via Supabase Realtime</li>
+                </ul>
+
+                <p className="links">
+                <a href="https://github.com/LCodingX/generalization-bet">GitHub</a> · <a href="https://frontend-tau-seven-58.vercel.app/runs" target="_blank" rel="noreferrer">Live Demo</a>
+                </p>
+            </div>
+            
             <div className="project">
                 <a href="https://interview-prep-platform-qxx5.onrender.com/" target="_blank" rel="noreferrer"><img src={interviewprep} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://interview-prep-platform-qxx5.onrender.com/" target="_blank" rel="noreferrer"><h2>Interview Prep Platform</h2></a>

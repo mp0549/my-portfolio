@@ -12,6 +12,7 @@ const labelsFirst = [
   "Keras",
   "scikit-learn",
   "Transformers",
+  "PEFT",
   "Hugging Face",
   "SentenceTransformers",
   "LangChain",
@@ -44,21 +45,20 @@ const labelsSecond = [
   "C++",
   "Bash",
   "Git",
-  "GitHub Actions",
   "Linux",
   "REST APIs",
   "CI/CD",
+  "Unit Testing",
   "System Design",
-  "Testing",
   "Agile Methodologies",
   "API Development",
+  "Modal",
 ];
 
 const labelsThird = [
   "Python",
   "R",
   "SQL",
-  "PopstgreSQL",
   "Pandas",
   "NumPy",
   "Matplotlib",
@@ -67,7 +67,6 @@ const labelsThird = [
   "Tableau",
   "Power BI",
   "Excel",
-  "Google Sheets",
   "Jupyter",
   "Data Cleaning",
   "Feature Engineering",
@@ -77,7 +76,8 @@ const labelsThird = [
   "SQLite",
   "MySQL",
   "PostgreSQL",
-  "BigQuery"
+  "BigQuery",
+  "Supabase"
 ];
 
 

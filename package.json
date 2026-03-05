@@ -32,7 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "rimraf docs && shx mv build docs"
+    "deploy": "rimraf docs && shx mv build docs",
+    "thumbnail": "node scripts/resize-thumbnail.js"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +57,7 @@
     "@types/react-vertical-timeline-component": "^3.3.6",
     "gh-pages": "^6.3.0",
     "rimraf": "^6.1.2",
+    "sharp": "^0.34.5",
     "shx": "^0.4.0"
   }
 }
