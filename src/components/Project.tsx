@@ -135,7 +135,7 @@ function Project() {
                 <p className="tech">Tech: React · Javascript · Node.js · APIs   · Full Stack App Development</p>
 
                 <p>
-                Designing and developing a beginner-friendly mobile health and fitness app focused on customizable workouts and accessibility.
+                Designed and built a React website to advertise services, facilitate student-tutor connections, collect applications, and improve accessibility
                 </p>
 
                 <ul className="projects ul">
