@@ -14,20 +14,21 @@ const orgs = [
     date: "Jul 2025 - Present · Madison, WI",
     bullets: [
       "Organized developer workshops and advised on technical content and speaker engagement",
-      "Recruited 150+ members through targeted outreach and event planning",
+      "Organized a 430 member hackathon: prepared sponsors, planned the event, etc. ",
+      "Recruited 500+ members through targeted outreach and event planning",
+      
     ],
   },
   {
     logo: waisiLogo,
-    role: "Fundamentals Cohort Leader",
+    role: "Technical Team",
     org: "Wisconsin AI Safety Initiative",
     date: "Oct 2025 - Present · Madison, WI",
     bullets: [
       "Lead a cohort of students pursuing technical AI safety, facilitating discussions and learning sessions",
       "Update and refine curriculum to incorporate the latest AI safety research and materials from BlueDot Impact curriculum",
       "Participate in a reading group and conduct structured research replications of relevant papers",
-      "Completed technical AI safety training in reward specification, interpretability, and adversarial evaluation",
-      "Studied AI policy frameworks including compute governance and international coordination",
+      "Completed technical and policy AI safety fundamentals program",
     ],
   },
   {

@@ -203,7 +203,7 @@
   align-items: center;
   justify-content: center;
 
-  background: rgba(80, 0, 202, 0.1);
+  background: #5100caa4;
   border: 1px solid rgba(80, 0, 202, 0.25);
 
   cursor: pointer;
@@ -219,6 +219,7 @@
 
 .expand-bubble.expanded .chevron {
   transform: rotate(-135deg);
+  background:rgba(80, 0, 202, 0.1);
 }
 
 .org-meta h3 {
