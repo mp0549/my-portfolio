@@ -1,3 +1,12 @@
+.vertical-timeline {
+    max-width: 100%;
+    width: 95%;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content {
+    width: 46%;
+}
+
 .vertical-timeline span {
     color: white;
     font-family: 'Courier Prime', monospace;
@@ -35,4 +44,65 @@
     .vertical-timeline-element .vertical-timeline-element-date {
         color: rgb(39, 40, 34);
     }
+}
+
+.vertical-timeline-element .timeline-description {
+    font-style: italic;
+    margin: 0.25em 0 0.75em;
+    color: rgb(80, 80, 80);
+}
+
+.vertical-timeline-element .timeline-positions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+.vertical-timeline-element .timeline-position {
+    background: #f6f4fb;
+    border: 1px solid #e4dcf5;
+    border-left: 3px solid #5000ca;
+    border-radius: 6px;
+    padding: 0.75em 1em;
+    box-shadow: 0 1px 3px rgba(80, 0, 202, 0.06);
+}
+
+.vertical-timeline-element .timeline-position-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5em;
+    margin-bottom: 0.4em;
+}
+
+.vertical-timeline-element .timeline-position-title {
+    color: rgb(39, 40, 34);
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.vertical-timeline-element .timeline-position-org-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #5000ca;
+}
+
+.vertical-timeline-element .timeline-position-role {
+    font-weight: 400;
+    color: rgb(80, 80, 80);
+}
+
+.vertical-timeline-element .timeline-position-date {
+    color: rgb(80, 80, 80);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.vertical-timeline-element .timeline-position ul {
+    margin: 0.25em 0 0;
+    padding-left: 1.1em;
 }

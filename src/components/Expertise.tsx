@@ -1,86 +1,17 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faBrain, faCode, faChartLine } from '@fortawesome/free-solid-svg-icons';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
+import skills from '../data/expertise.json';
 
-const labelsFirst = [
-  "Python",
-  "PyTorch",
-  "TensorFlow",
-  "Keras",
-  "scikit-learn",
-  "Transformers",
-  "PEFT",
-  "Hugging Face",
-  "SentenceTransformers",
-  "LangChain",
-  "NLTK",
-  "FastAPI",
-  "Streamlit",
-  "Flask",
-  "OpenCV",
-  "Mediapipe",
-  "NumPy",
-  "Pandas",
-  "Matplotlib",
-  "Seaborn"
-];
-
-const labelsSecond = [
-  "JavaScript",
-  "PHP",
-  "Hack",
-  "Java",
-  "C",
-  "C++",
-  "React",
-  "React Native",
-  "Node.js",
-  "Next.js",
-  "Astro",
-  "Typescript",
-  "Express",
-  "HTML",
-  "CSS",
-  "Bash",
-  "Git",
-  "Linux",
-  "REST APIs",
-  "CI/CD",
-  "Unit Testing",
-  "System Design",
-  "Agile Methodologies",
-  "API Development",
-  "Modal",
-];
-
-const labelsThird = [
-  "Python",
-  "R",
-  "SQL",
-  "Pandas",
-  "NumPy",
-  "Matplotlib",
-  "Seaborn",
-  "Plotly",
-  "Tableau",
-  "Power BI",
-  "Excel",
-  "Jupyter",
-  "Data Cleaning",
-  "Feature Engineering",
-  "Model Evaluation",
-  "A/B Testing",
-  "Data Visualization",
-  "SQLite",
-  "MySQL",
-  "PostgreSQL",
-  "BigQuery",
-  "Supabase"
-];
-
+const icons: Record<string, IconDefinition> = {
+    brain: faBrain,
+    code: faCode,
+    "chart-dots": faChartLine,
+};
 
 function Expertise() {
     return (
@@ -88,43 +19,23 @@ function Expertise() {
         <div className="skills-container">
             <h1>Expertise</h1>
             <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>Artificial Intelligence & Machine Learning</h3>
-                    <p>I specialize in building, fine-tuning, and deploying modern machine learning and deep learning systems, from large language models (LLMs) to computer vision pipelines.
-</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
+                {skills.map((skill, index) => (
+                    <div className="skill" key={index}>
+                        <FontAwesomeIcon icon={icons[skill.icon]} size="3x"/>
+                        <h3>{skill.title}</h3>
+                        <p>{skill.description}</p>
+                        {skill.groups.map((group, gi) => (
+                            <div className="skill-group" key={gi}>
+                                <span className="skill-group-label">{group.label}</span>
+                                <div className="flex-chips">
+                                    {group.skills.map((label, i) => (
+                                        <Chip key={i} className='chip' label={label} />
+                                    ))}
+                                </div>
+                            </div>
                         ))}
                     </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Software Engineering & Systems Design</h3>
-                    <p>From full-stack web applications to scalable backend architectures, I build modular systems designed for performance, maintainability, and user experience.
-</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>Data Science & Analytics</h3>
-                    <p>I apply data-driven methods to uncover insights and support decision-making. My background spans data wrangling, visualization, and statistical modeling.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     </div>

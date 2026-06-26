@@ -1,0 +1,104 @@
+[
+  {
+    "type": "work",
+    "icon": "flask",
+    "date": "Mar 2026 – Present",
+    "title": "Equistamp",
+    "subtitle": "Research Engineer · Full-time",
+    "description": "AI safety contractor, embedded with METR and Redwood Research.",
+    "positions": [
+      {
+        "title": "Research Engineer",
+        "org": "METR · Contract",
+        "date": "May 2026 – Present",
+        "bullets": [
+          "Contributed to [[[Hawk]]] — now adopted by organizations including the UK AI Security Institute and EU AI Office.",
+          "Deployed and audited the full [[AWS infrastructure stack]]{EKS, ECS Fargate, Aurora, Pulumi IaC} end-to-end on a fresh account, surfacing and fixing critical blockers across Kubernetes, networking, and the Hawk CLI — fixes merged upstream and directly unblocked external adoption.",
+          "Generated human-baseline suspicion scores on 50+ AI agent transcripts for METR's monitorability research, benchmarking human vs. LLM detection of covert side-task pursuit."
+        ]
+      },
+      {
+        "title": "AI Control & SWE",
+        "org": "Redwood Research · Contract",
+        "date": "May 2026 – Present",
+        "bullets": [
+          "Contributing to [[[LinuxArena]]], one of the largest AI control evaluation frameworks to date.",
+          "Engineered [[adversarial attack scenarios]]{eg. data exfiltration, backdooring, production sabotage}) achieving high evasion rates against frontier monitors including Claude Opus and GPT-5, contributing to a published benchmark dataset.",
+          "Designed containerized multi-service attack surfaces and built automated tooling to generate and test attack variants at scale.",
+          "Built on and maintained [[[Control Tower]]]; redesigned the model cost-tracking abstraction that significantly improved reliability and observability."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "work",
+    "icon": "flask",
+    "date": "Sep 2025 – Present",
+    "title": "UW Graphics Group · Madison, WI",
+    "subtitle": "Directed Study",
+    "bullets": [
+      "Investigating representational limitations of visualization design guidelines for automated synthesis, building on baseline from [[[Choi et al.]]].",
+      "Built and analyzed a corpus of 1.5K+ guidelines across 49 sources to surface inconsistencies in existing frameworks.",
+      "Designed and evaluated an LLM-assisted pipeline to probe assumptions and scalability of guideline structuring.",
+      "Developed a [[7-dimension classification schema]]{Seven supplementary dimensions (A–G) capturing guideline properties the baseline template misses — covering things like risk/failure modes and audience dependency. Two dimensions have since been promoted to core status based on initial findings.} for systematic cross-source comparison; co-authoring a conference paper on the findings."
+   ]
+  },
+  {
+    "type": "work",
+    "icon": "briefcase",
+    "date": "May 2025 – July 2025",
+    "title": "Meta · Menlo Park, CA",
+    "subtitle": "AI/Data Science Intern",
+    "bullets": [
+      "Designed and deployed an end-to-end production Machine Learning pipeline for unstructured text classification using LLaMA models. Reducing misclassification by `~30%` in deployment feedback analysis.",
+      "Built a scalable LLaMA-based agent framework for multi-step task execution, refactoring a large codebase into a compact, maintainable architecture with memory and agent-chaining support.",
+      "Built a React analytics dashboard integrated with Meta's internal stack; defined data models and APIs that enabled 12+ teams to act on 100K+ weekly datapoints."
+    ]
+  },
+  {
+    "type": "work",
+    "icon": "briefcase",
+    "date": "March 2024 – April 2025",
+    "title": "Jumpshot · Fountain Valley, CA (hybrid)",
+    "subtitle": "Technical Business Analyst / Full-Stack Engineer",
+    "bullets": [
+      "Built frontend and backend features for Jumpshot, a mobile basketball training application, supporting CI/CD workflows and analytics integrations.",
+      "Acted as primary liaison between coaches and engineers, translating product requirements into technical implementation plans.",
+      "Led testing and QA efforts, resolving issues pre-release to improve performance and user experience."
+    ]
+  },
+  {
+    "type": "education",
+    "icon": "graduationCap",
+    "date": "2024 – Expected 2027",
+    "title": "University of Wisconsin–Madison",
+    "subtitle": "Computer Science B.S. & Statistics B.S.",
+    "bullets": [
+      "Directed study with UW Graphics Group focused on visualization design guideline research.",
+      "Coursework includes Algorithms, Machine Learning, Artificial Intelligence, Computer Organization, Applied Regression Analysis, and Mathematical Statistics."
+    ]
+  },
+  {
+    "type": "work",
+    "icon": "briefcase",
+    "date": "Jun 2023 – Sep 2023",
+    "title": "InnoWinds Inc · Remote",
+    "subtitle": "Software Intern",
+    "bullets": [
+      "Designed and implemented a resume parser for PlexusHR, a hiring marketplace platform, automating candidate data extraction and reducing manual processing effort.",
+      "Built Tableau dashboards analyzing candidate skills, education trends, and profile distributions.",
+      "Improved automation workflows through Python-based data extraction and analysis."
+    ]
+  },
+  {
+    "type": "work",
+    "icon": "briefcase",
+    "date": "May 2022 – Aug 2022",
+    "title": "Advent Global Solutions · Remote",
+    "subtitle": "Intern",
+    "bullets": [
+      "Supported technical recruitment and IT consulting operations, including resume screening and candidate data management.",
+      "Coordinated across client hiring pipelines to streamline placement processes."
+    ]
+  }
+]

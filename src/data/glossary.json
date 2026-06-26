@@ -1,0 +1,12 @@
+{
+  "hawk": "METR's open-source platform for running large-scale AI evaluations on AWS.",
+  "linuxarena": "Redwood Research's AI control evaluation framework, benchmarking whether frontier monitors can detect a covertly misbehaving agent.",
+  "control tower": "The core infrastructure harness Redwood uses to run evaluations across Dockerized environments.",
+  "choi et al.": "A 2021 paper proposing a baseline template for visualization design guidelines, used here as the foundation this research builds on and extends.",
+  "modal": "A serverless cloud platform for running GPU/CPU compute jobs without managing infrastructure.",
+  "supabase realtime": "A Supabase feature that pushes live database updates to connected clients, used here to stream job status to the frontend.",
+  "claude api": "Anthropic's API for accessing Claude models programmatically, used here to generate and grade interview questions.",
+  "flan-t5": "An instruction-tuned language model from Google, used here as the base model for stance classification.",
+  "lora": "Low-Rank Adaptation — a technique for fine-tuning large models by training small additional weight matrices instead of the full model, drastically reducing compute and memory needs.",
+  "mediapipe": "Google's framework for real-time hand, face, and body tracking from camera input, used here to recognize hand gestures."
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "icon": "brain",
+    "title": "AI & machine learning",
+    "description": "Building, fine-tuning, and deploying ML/DL systems, from LLMs to computer vision.",
+    "groups": [
+      {
+        "label": "Core",
+        "skills": ["Python", "PyTorch", "TensorFlow", "scikit-learn"]
+      },
+      {
+        "label": "NLP & LLM tooling",
+        "skills": ["Transformers", "Hugging Face", "PEFT", "LoRA", "LangChain", "SentenceTransformers", "NLTK"]
+      },
+      {
+        "label": "Model APIs & serving",
+        "skills": ["Claude API", "Gemini API", "FastAPI", "Streamlit", "Flask", "OpenCV", "Mediapipe"]
+      }
+    ]
+  },
+  {
+    "icon": "code",
+    "title": "Software engineering & systems",
+    "description": "Full-stack apps and backend architectures built for performance and maintainability.",
+    "groups": [
+      {
+        "label": "Languages",
+        "skills": ["JavaScript", "TypeScript", "PHP", "Java", "C", "C++"]
+      },
+      {
+        "label": "Frameworks",
+        "skills": ["React", "React Native", "Next.js", "Node.js", "Astro", "Express"]
+      },
+      {
+        "label": "Cloud & infrastructure",
+        "skills": ["AWS", "EKS", "ECS Fargate", "Lambda", "S3", "Pulumi", "Docker", "Kubernetes", "Vercel", "Railway", "Modal"]
+      },
+      {
+        "label": "Practices & tools",
+        "skills": ["Git", "Linux", "Bash", "REST APIs", "CI/CD", "Unit testing", "System design", "Agile"]
+      }
+    ]
+  },
+  {
+    "icon": "chart-dots",
+    "title": "Data science & analytics",
+    "description": "Data-driven methods for insight and decision-making: wrangling, visualization, modeling.",
+    "groups": [
+      {
+        "label": "Analysis",
+        "skills": ["R", "SQL", "Pandas", "NumPy", "Feature engineering", "Model evaluation", "A/B testing"]
+      },
+      {
+        "label": "Visualization & BI",
+        "skills": ["Matplotlib", "Seaborn", "Plotly", "Tableau", "Power BI", "Excel"]
+      },
+      {
+        "label": "Data & storage",
+        "skills": ["SQLite", "MySQL", "PostgreSQL", "BigQuery", "Supabase", "Jupyter", "Data cleaning"]
+      }
+    ]
+  }
+]

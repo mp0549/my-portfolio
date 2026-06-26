@@ -46,6 +46,24 @@
     }
 }
 
+.skill-group {
+    margin-top: 1rem;
+
+    &:first-of-type {
+        margin-top: 1.25rem;
+    }
+}
+
+.skill-group-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.7rem;
+    font-family: 'Courier Prime', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.4rem;
+}
+
 .flex-chips .MuiChip-root {
     margin-right: 0.5em;
 }

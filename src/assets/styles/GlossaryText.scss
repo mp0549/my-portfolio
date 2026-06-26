@@ -1,0 +1,141 @@
+.glossary-term-wrap {
+  position: relative;
+  display: inline;
+}
+
+.glossary-term {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  text-decoration-color: currentColor;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration-style: solid;
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+.glossary-card {
+  position: absolute;
+  left: 0;
+  z-index: 50;
+  display: block;
+  width: max-content;
+  max-width: min(320px, 80vw);
+  padding: 0.6em 2em 0.65em 0.75em;
+  background: #ffffff;
+  color: rgb(39, 40, 34);
+  border: 1px solid rgba(80, 0, 202, 0.25);
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  font-size: 0.85rem;
+  line-height: 1.35;
+  text-align: left;
+  white-space: normal;
+  cursor: default;
+
+  &--above {
+    bottom: calc(100% + 8px);
+  }
+
+  &--below {
+    top: calc(100% + 8px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: transparent;
+  }
+
+  &--above::before {
+    bottom: -10px;
+  }
+
+  &--below::before {
+    top: -10px;
+  }
+}
+
+.glossary-card-term {
+  display: block;
+  font-weight: 600;
+  color: #5000ca;
+  margin-bottom: 0.2em;
+}
+
+.glossary-card-def {
+  display: block;
+  color: rgb(39, 40, 34);
+}
+
+.glossary-card-close {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: rgb(80, 80, 80);
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(80, 0, 202, 0.1);
+    color: #5000ca;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #5000ca;
+    outline-offset: 1px;
+  }
+}
+
+body.dark .glossary-card {
+  background: #1f1f24;
+  color: #f0f0f0;
+  border-color: rgba(150, 110, 255, 0.4);
+}
+
+body.dark .glossary-card-def {
+  color: #f0f0f0;
+}
+
+body.dark .glossary-card-term {
+  color: #b89cff;
+}
+
+body.dark .glossary-card-close {
+  color: #cfcfcf;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(150, 110, 255, 0.18);
+    color: #b89cff;
+  }
+}

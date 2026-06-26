@@ -1,0 +1,58 @@
+[
+  {
+    "logo": "gdg",
+    "role": "President",
+    "org": "Google Developer Groups",
+    "date": "Jul 2025 - Present · Madison, WI",
+    "bullets": [
+      "Organized developer workshops and advised on technical content and speaker engagement",
+      "Planned and ran a 430-person hackathon end-to-end, including sponsor coordination and event logistics",
+      "Recruited 500+ members through targeted outreach and event planning"
+    ]
+  },
+  {
+    "logo": "waisi",
+    "role": "Cohort Lead, Technical Team",
+    "org": "Wisconsin AI Safety Initiative",
+    "date": "Oct 2025 - Present · Madison, WI",
+    "bullets": [
+      "Lead a cohort of students through an 8-week technical AI safety curriculum, facilitating discussions and learning sessions",
+      "Update and refine curriculum to incorporate the latest AI safety research and materials from BlueDot Impact",
+      "Participate in a reading group and conduct structured research replications of relevant papers",
+      "Completed the technical and policy AI safety fundamentals program; leading a second cohort starting this fall"
+    ]
+  },
+  {
+    "logo": "waAuto",
+    "role": "Perception Engineer & Mentor",
+    "org": "Wisconsin Autonomous – Autodrive Challenge",
+    "date": "Sep 2024 – Present · Madison, WI",
+    "bullets": [
+      "Developed computer vision algorithms for detection, lane recognition, and segmentation",
+      "Reduced compute cost by 40% through optimized trajectory mapping",
+      "Mentored two engineers on CV fundamentals and integration workflows"
+    ]
+  },
+  {
+    "logo": "ssc",
+    "role": "Founder & Tutor",
+    "org": "Student Success Club",
+    "date": "Nov 2022 – Present · Fountain Valley, CA",
+    "bullets": [
+      "Launched a student-run tutoring initiative providing free, personalized academic support",
+      "Built a React website to connect students with tutors and streamline services",
+      "Advocated for educational equity through peer-driven community support"
+    ]
+  },
+  {
+    "logo": "baja",
+    "role": "Mechanical Engineer",
+    "org": "Baja SAE",
+    "date": "Sep 2024 – May 2025",
+    "bullets": [
+      "Designed and assembled an off-road vehicle for competitive Baja SAE events",
+      "Applied SolidWorks and hands-on fabrication to improve durability and performance",
+      "Collaborated with a multidisciplinary team to integrate mechanical subsystems"
+    ]
+  }
+]

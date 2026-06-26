@@ -1,0 +1,106 @@
+[
+  {
+    "image": "influencedashboard",
+    "imageHref": "https://github.com/mp0549/influence-proxy-dashboard",
+    "titleHref": "https://github.com/LCodingX/generalization-bet",
+    "title": "Influence Proxy Dashboard",
+    "tech": "Next.js · FastAPI · PyTorch · HuggingFace · PEFT · Modal · Supabase",
+    "description": "Built a full-stack research tool that lets AI safety researchers fine-tune language models and see exactly which training examples shaped the model's behavior — turning fine-tuning from a black box into an auditable process.",
+    "bullets": [
+      "Computed [[influence scores]]{A measure of how much a specific training example shaped a model's prediction on a given input — used here to make fine-tuning auditable instead of a black box.} live during training using [[gradient dot products]]{Comparing the gradient direction of a training example to the gradient of a test prediction; a high dot product means that example likely influenced the prediction.}, with no checkpoint storage required",
+      "Ran serverless A100 GPU jobs on [[[Modal]]] with async status updates streamed to the frontend in real time",
+      "Visualized per-example influence as animated heatmaps and ranked leaderboards for intuitive data auditing",
+      "Designed a full job pipeline from data upload through fine-tuning to influence score delivery via [[[Supabase Realtime]]]"
+    ],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/LCodingX/generalization-bet" },
+      { "label": "Live Demo", "href": "https://frontend-tau-seven-58.vercel.app/runs" }
+    ]
+  },
+  {
+    "image": "interviewprep",
+    "imageHref": "https://interview-prep-platform-qxx5.onrender.com/",
+    "titleHref": "https://interview-prep-platform-qxx5.onrender.com/",
+    "title": "Interview Prep Platform",
+    "tech": "Python · Flask · SQLite · SQLAlchemy · HTML/CSS/JS · Claude API",
+    "description": "Built a full-stack AI interview prep platform that generates personalized questions from resumes and job descriptions and provides structured performance feedback. Won first place at Claude hackathon",
+    "bullets": [
+      "Designed REST APIs for interview sessions, questions, and responses",
+      "Integrated the [[[Claude API]]] for dynamic question generation and answer grading",
+      "Implemented persistent storage for interview history using SQLite",
+      "Built a multi-step frontend flow for interview practice and results review"
+    ],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/mp0549/ClaudeHacks-interview-prep-platform" },
+      { "label": "Live Demo", "href": "https://interview-prep-platform-qxx5.onrender.com/" }
+    ]
+  },
+  {
+    "image": "covid",
+    "imageHref": "https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large",
+    "titleHref": "https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large",
+    "title": "Covid-19 Vaccine Stance Classification",
+    "tech": "Python · PyTorch · Hugging Face · FLAN-T5 · LoRA · bitsandbytes · scikit-learn",
+    "description": "Built a stance classification system to label tweets as in-favor, against, or neutral-or-unclear toward COVID-19 vaccination under tight data and GPU constraints.",
+    "bullets": [
+      "Fine-tuned [[[FLAN-T5]]] using [[[LoRA]]] adapters, training on limited resources",
+      "Designed a [[curriculum learning]]{Training the model on easier examples first and gradually introducing harder ones, rather than feeding it randomly-ordered data from the start — used here to stabilize 3-way classification.} strategy to stabilize 3-way stance classification",
+      "Mitigated failure modes including [[neutral collapse]]{When a classifier defaults to predicting the majority/neutral class too often, especially under class imbalance, rather than correctly distinguishing genuine stance.}, sarcasm, and more",
+      "Achieved improved macro-F1 and neutral recall compared to zero-shot and standard fine-tuning baselines"
+    ],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large" }
+    ]
+  },
+  {
+    "image": "mariokart",
+    "imageHref": "https://github.com/mp0549/CheeseHacks2024MarioKart",
+    "titleHref": "https://github.com/mp0549/CheeseHacks2024MarioKart",
+    "title": "Gesture-based Game Control",
+    "tech": "Python · OpenCV · MediaPipe · Computer Vision",
+    "description": "Built a real-time, gesture-based controller that allows players to control Mario Kart using hand movements instead of a physical controller. Won fourth place at Google Developer Groups hackathon.",
+    "bullets": [
+      "Implemented real-time hand tracking and gesture recognition using [[[MediaPipe]]]",
+      "Mapped hand gestures to in-game controls such as steering, acceleration, and item usage",
+      "Supported multiplayer by splitting camera feed for independent gesture control",
+      "Optimized for low-latency input to ensure smooth and responsive gameplay"
+    ],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/mp0549/CheeseHacks2024MarioKart" },
+      { "label": "Demo Video", "href": "https://drive.google.com/file/d/1LpZbgyQJinmTIPZYtY_HWPHl5WWt8byf/view?usp=sharing" }
+    ]
+  },
+  {
+    "image": "healthapp",
+    "imageHref": "https://github.com/mp0549/Health-App",
+    "titleHref": "https://github.com/mp0549/Health-App",
+    "title": "Health App",
+    "tech": "React Native · Python · SQLite · Mobile App Development",
+    "description": "Designing and developing a beginner-friendly mobile health and fitness app focused on customizable workouts and accessibility.",
+    "bullets": [
+      "Built a React Native frontend with modular components for workout creation and tracking",
+      "Designed backend logic using Python with local-first data storage via SQLite",
+      "Planned a scalable full-stack architecture with future cloud sync support",
+      "Researching AI-driven workout recommendations based on user goals, availability, and preferences"
+    ],
+    "status": "Actively in development"
+  },
+  {
+    "image": "ssc",
+    "imageHref": "http://studentsuccessclub.org/",
+    "titleHref": "http://studentsuccessclub.org/",
+    "title": "Student Success Club",
+    "tech": "React · JavaScript · Node.js · APIs · Full Stack App Development",
+    "description": "Designed and built a React website to advertise services, facilitate student-tutor connections, collect applications, and improve accessibility",
+    "bullets": [
+      "Designed and built a React website to advertise services, facilitate student-tutor connections, and improve accessibility",
+      "Developed full-stack registration and contact forms, storing submissions in a database and enabling automated tutor-student matching",
+      "Implemented real-time notifications to phone and email for new submissions",
+      "Led a team of volunteer tutors and promoted peer support and educational equity through free, community-driven resources"
+    ],
+    "links": [
+      { "label": "Website", "href": "http://studentsuccessclub.org/" },
+      { "label": "GitHub", "href": "https://github.com/mp0549/landing-NGO" }
+    ]
+  }
+]
