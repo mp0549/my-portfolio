@@ -1,5 +1,23 @@
 [
   {
+    "image": "montecarlo",
+    "imageHref": "https://github.com/mp0549/monte-carlo-simulation",
+    "titleHref": "https://github.com/mp0549/monte-carlo-simulation",
+    "title": "GPU-Accelerated Monte Carlo Option Pricing",
+    "tech": "Python · NumPy · Numba CUDA · PyTorch · Matplotlib · pandas",
+    "description": "Built a quantitative-finance benchmark that prices European options by Monte Carlo simulation on both CPU and GPU, validates the results against the analytical Black-Scholes formula, and measures how the GPU speedup grows with problem size.",
+    "bullets": [
+      "Wrote a custom [[[Numba CUDA]]] kernel that prices one option path per GPU thread, generalized by a [[grid-stride loop]]{A pattern where each thread strides across multiple work items, so the same kernel runs efficiently whether there are 10K or 10M paths — the launch is sized for the hardware, not the data.} so the same kernel scales from 10K to 10M paths",
+      "Cut memory contention with a block-level [[shared-memory reduction]]{Each block sums its threads' payoffs in fast on-chip memory using an O(log n) tree, then one thread does a single atomicAdd to a global total — avoiding millions of threads serializing on one counter.}, copying back only two scalars to minimize [[[PCIe]]] transfer",
+      "Generated random numbers on-device with a per-thread [[xoroshiro128+]]{A counter-based RNG where each GPU thread owns an independent sub-stream keyed by its global id, avoiding the correlated draws and race conditions you'd get from sharing one generator across threads.} stream, keeping the entire simulation on the GPU",
+      "Validated correctness against the closed-form [[[Black-Scholes]]] price and benchmarked CPU vs GPU across problem sizes, showing speedup grow with path count at the expected [[1/√N]]{Monte Carlo error shrinks proportionally to one over the square root of the number of paths — so halving the error requires 4× the simulations, which is exactly why the workload is compute-hungry and ideal for GPUs.} convergence rate"
+    ],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/mp0549/monte-carlo-simulation" }
+    ]
+  },
+
+  {
     "image": "influencedashboard",
     "imageHref": "https://github.com/mp0549/influence-proxy-dashboard",
     "titleHref": "https://github.com/LCodingX/generalization-bet",
@@ -36,23 +54,6 @@
     ]
   },
   {
-    "image": "covid",
-    "imageHref": "https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large",
-    "titleHref": "https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large",
-    "title": "Covid-19 Vaccine Stance Classification",
-    "tech": "Python · PyTorch · Hugging Face · FLAN-T5 · LoRA · bitsandbytes · scikit-learn",
-    "description": "Built a stance classification system to label tweets as in-favor, against, or neutral-or-unclear toward COVID-19 vaccination under tight data and GPU constraints.",
-    "bullets": [
-      "Fine-tuned [[[FLAN-T5]]] using [[[LoRA]]] adapters, training on limited resources",
-      "Designed a [[curriculum learning]]{Training the model on easier examples first and gradually introducing harder ones, rather than feeding it randomly-ordered data from the start — used here to stabilize 3-way classification.} strategy to stabilize 3-way stance classification",
-      "Mitigated failure modes including [[neutral collapse]]{When a classifier defaults to predicting the majority/neutral class too often, especially under class imbalance, rather than correctly distinguishing genuine stance.}, sarcasm, and more",
-      "Achieved improved macro-F1 and neutral recall compared to zero-shot and standard fine-tuning baselines"
-    ],
-    "links": [
-      { "label": "GitHub", "href": "https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large" }
-    ]
-  },
-  {
     "image": "mariokart",
     "imageHref": "https://github.com/mp0549/CheeseHacks2024MarioKart",
     "titleHref": "https://github.com/mp0549/CheeseHacks2024MarioKart",
@@ -68,6 +69,23 @@
     "links": [
       { "label": "GitHub", "href": "https://github.com/mp0549/CheeseHacks2024MarioKart" },
       { "label": "Demo Video", "href": "https://drive.google.com/file/d/1LpZbgyQJinmTIPZYtY_HWPHl5WWt8byf/view?usp=sharing" }
+    ]
+  },
+  {
+    "image": "covid",
+    "imageHref": "https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large",
+    "titleHref": "https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large",
+    "title": "Covid-19 Vaccine Stance Classification",
+    "tech": "Python · PyTorch · Hugging Face · FLAN-T5 · LoRA · bitsandbytes · scikit-learn",
+    "description": "Built a stance classification system to label tweets as in-favor, against, or neutral-or-unclear toward COVID-19 vaccination under tight data and GPU constraints.",
+    "bullets": [
+      "Fine-tuned [[[FLAN-T5]]] using [[[LoRA]]] adapters, training on limited resources",
+      "Designed a [[curriculum learning]]{Training the model on easier examples first and gradually introducing harder ones, rather than feeding it randomly-ordered data from the start — used here to stabilize 3-way classification.} strategy to stabilize 3-way stance classification",
+      "Mitigated failure modes including [[neutral collapse]]{When a classifier defaults to predicting the majority/neutral class too often, especially under class imbalance, rather than correctly distinguishing genuine stance.}, sarcasm, and more",
+      "Achieved improved macro-F1 and neutral recall compared to zero-shot and standard fine-tuning baselines"
+    ],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/mp0549/COVID-19-Vaccine-Stance-Classification-FLAN-T5-Large" }
     ]
   },
   {

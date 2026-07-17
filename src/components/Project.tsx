@@ -5,9 +5,10 @@ import healthapp from '../assets/images/Health App.png';
 import interviewprep from '../assets/images/interviewprep.jpeg';
 import mariokart from '../assets/images/mariokartgameplay.jpg';
 import influencedashboard from '../assets/images/influencedashboard.png';
-import '../assets/styles/Project.scss';
+import montecarlo from '../assets/images/montecarlo.png';
 import projects from '../data/projects.json';
 import GlossaryText from './GlossaryText';
+import '../assets/styles/Project.scss';
 
 const images: Record<string, string> = {
     ssc,
@@ -16,6 +17,7 @@ const images: Record<string, string> = {
     interviewprep,
     mariokart,
     influencedashboard,
+    montecarlo
 };
 
 type ProjectLink = { label: string; href: string };
