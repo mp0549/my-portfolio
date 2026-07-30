@@ -150,17 +150,25 @@ function GlossaryTerm({ term, definition }: { term: string; definition: string }
       onMouseEnter={handleHoverOpen}
       onMouseLeave={handleHoverLeave}
     >
-      <button
-        type="button"
+      <span
+        role="button"
+        tabIndex={0}
         className="glossary-term"
         aria-expanded={open}
         onClick={(e) => {
           e.stopPropagation();
           handleClick();
         }}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            e.stopPropagation();
+            handleClick();
+          }
+        }}
       >
         {term}
-      </button>
+      </span>
       {open && (
         <span
           ref={cardRef}

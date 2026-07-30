@@ -12,6 +12,9 @@
   font: inherit;
   color: inherit;
   cursor: pointer;
+  // inline span (not <button>) so the term breaks across lines with the
+  // surrounding prose; buttons are atomic inline boxes and never wrap
+  white-space: normal;
   text-decoration: underline dotted;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;

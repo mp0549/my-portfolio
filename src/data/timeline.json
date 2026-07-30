@@ -12,9 +12,11 @@
         "org": "METR · Contract",
         "date": "May 2026 – Present",
         "bullets": [
-          "Contributed to [[[Hawk]]] — now adopted by organizations including the UK AI Security Institute and EU AI Office.",
-          "Deployed and audited the full [[AWS infrastructure stack]]{EKS, ECS Fargate, Aurora, Pulumi IaC} end-to-end on a fresh account, surfacing and fixing critical blockers across Kubernetes, networking, and the Hawk CLI — fixes merged upstream and directly unblocked external adoption.",
-          "Generated human-baseline suspicion scores on 50+ AI agent transcripts for METR's monitorability research, benchmarking human vs. LLM detection of covert side-task pursuit."
+          "Contributed to [[[Hawk]]] — now used by the UK AI Security Institute and EU AI Office.",
+          "Deployed and audited its full [[AWS infrastructure stack]]{EKS, ECS Fargate, Aurora, Pulumi IaC. Stood it up end-to-end on a fresh account, surfacing and fixing blockers across Kubernetes, networking, and the Hawk CLI, and documenting friction points for external adopters.}; upstream fixes unblocked external adoption.",
+          "Found and fixed multiple [[cross-tenant security issues]]{Spanning data integrity, IAM policy design, authorization, and concurrency — including a race condition I discovered in my own earlier security fix. Favored narrowly scoped, least-privilege changes over architectural rewrites.} with least-privilege fixes.",
+          "Diagnosed a [[CPU-starvation timeout storm]]{Reproduced the client-side failure mode experimentally on an evaluation run of ~297k model calls, then added runner metrics, Datadog alerts, and runbooks that catch it within minutes instead of in postmortem. Also contributed retry-cause telemetry upstream to inspect_ai, merged in 0.3.251, making retrying timeouts attributable as they happen.} and cut a [[hot Postgres query ~200×]]{~890 ms → ~4 ms by replacing a bitmap scan with a partial composite index, hardened against invalid concurrent-index states to preserve zero-downtime deployment.}.",
+          "Scored 50+ agent transcripts to build [[human baselines]]{Benchmarking human vs. LLM detection of covert side-task pursuit.} for METR's [[[monitorability]]] research."
         ]
       },
       {
@@ -22,10 +24,10 @@
         "org": "Redwood Research · Contract",
         "date": "May 2026 – Present",
         "bullets": [
-          "Contributing to [[[LinuxArena]]], one of the largest AI control evaluation frameworks to date.",
-          "Engineered [[adversarial attack scenarios]]{eg. data exfiltration, backdooring, production sabotage}) achieving high evasion rates against frontier monitors including Claude Opus and GPT-5, contributing to a published benchmark dataset.",
-          "Designed containerized multi-service attack surfaces and built automated tooling to generate and test attack variants at scale.",
-          "Built on and maintained [[[Control Tower]]]; redesigned the model cost-tracking abstraction that significantly improved reliability and observability."
+          "Contributing to [[[LinuxArena]]], one of the largest [[[AI control]]] evaluation frameworks to date.",
+          "Engineered [[adversarial attack scenarios]]{eg. data exfiltration, backdooring, production sabotage. Designed containerized multi-service attack surfaces and automated tooling to generate and test variants at scale; contributed to a published benchmark dataset.} with high evasion rates against [[[frontier monitors]]] like Claude Opus and GPT-5.",
+          "Audited 10 AI research experiments for [[sabotage and evaluation-integrity failures]]{Triangulated 2,000–4,000+ code commits, execution logs, git history, and experimental artifacts per audit — including re-deriving reported metrics from raw per-sample data to catch grading bugs and metric-gaming. Produced evidence-based findings and remediation recommendations for issues affecting research validity.}, delivering a credence and code-cited fixes each.",
+          "Maintained [[[Control Tower]]] and redesigned its [[model cost-tracking abstraction]]{Significantly improved reliability and observability of per-model cost accounting across evaluation runs.}."
         ]
       }
     ]
@@ -50,8 +52,8 @@
     "title": "Meta · Menlo Park, CA",
     "subtitle": "AI/Data Science Intern",
     "bullets": [
-      "Designed and deployed an end-to-end production Machine Learning pipeline for unstructured text classification using LLaMA models. Reducing misclassification by `~30%` in deployment feedback analysis.",
-      "Built a scalable LLaMA-based agent framework for multi-step task execution, refactoring a large codebase into a compact, maintainable architecture with memory and agent-chaining support.",
+      "Designed and deployed an end-to-end production Machine Learning pipeline for unstructured text classification using [[[LLaMA]]] models, reducing misclassification by ~30% in deployment feedback analysis.",
+      "Built a scalable LLaMA-based [[agent framework]]{Supports multi-step task execution with memory and agent-chaining; refactored a large codebase into a compact, maintainable architecture.} for multi-step task execution.",
       "Built a React analytics dashboard integrated with Meta's internal stack; defined data models and APIs that enabled 12+ teams to act on 100K+ weekly datapoints."
     ]
   },
@@ -62,7 +64,7 @@
     "title": "Jumpshot · Fountain Valley, CA (hybrid)",
     "subtitle": "Technical Business Analyst / Full-Stack Engineer",
     "bullets": [
-      "Built frontend and backend features for Jumpshot, a mobile basketball training application, supporting CI/CD workflows and analytics integrations.",
+      "Built frontend and backend features for Jumpshot, a mobile basketball training application, supporting [[[CI/CD]]] workflows and analytics integrations.",
       "Acted as primary liaison between coaches and engineers, translating product requirements into technical implementation plans.",
       "Led testing and QA efforts, resolving issues pre-release to improve performance and user experience."
     ]

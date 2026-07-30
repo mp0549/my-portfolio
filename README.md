@@ -1,4 +1,4 @@
-To redeploy after changes: 
+#To redeploy after changes: 
 npm run build
 git add .
 git commit -m "Update site"

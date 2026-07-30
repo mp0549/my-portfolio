@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.c81f97bb.css",
-    "main.js": "/my-portfolio/static/js/main.c8e90421.js",
+    "main.js": "/my-portfolio/static/js/main.6e2f63d7.js",
     "static/js/453.b05d8aa5.chunk.js": "/my-portfolio/static/js/453.b05d8aa5.chunk.js",
     "static/media/bg-light.png": "/my-portfolio/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/my-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
@@ -11,6 +11,7 @@
     "static/media/influencedashboard.png": "/my-portfolio/static/media/influencedashboard.eff5f67b4e3b3da79514.png",
     "static/media/covid.png": "/my-portfolio/static/media/covid.041a3be6f52f9dadb9ac.png",
     "static/media/mariokartgameplay.jpg": "/my-portfolio/static/media/mariokartgameplay.196a3113ad2403f48d0b.jpg",
+    "static/media/montecarlo.png": "/my-portfolio/static/media/montecarlo.d3267aae765e0895e78e.png",
     "static/media/Health App.png": "/my-portfolio/static/media/Health App.68045b027711b7ea2005.png",
     "static/media/interviewprep.jpeg": "/my-portfolio/static/media/interviewprep.8a6c29894919b2543e24.jpeg",
     "static/media/headshot.jpeg": "/my-portfolio/static/media/headshot.64afad7ae912f8db3ed2.jpeg",
@@ -18,11 +19,11 @@
     "static/media/wa_autonomous.png": "/my-portfolio/static/media/wa_autonomous.c26dcd4c64a17952d66a.png",
     "index.html": "/my-portfolio/index.html",
     "main.c81f97bb.css.map": "/my-portfolio/static/css/main.c81f97bb.css.map",
-    "main.c8e90421.js.map": "/my-portfolio/static/js/main.c8e90421.js.map",
+    "main.6e2f63d7.js.map": "/my-portfolio/static/js/main.6e2f63d7.js.map",
     "453.b05d8aa5.chunk.js.map": "/my-portfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c81f97bb.css",
-    "static/js/main.c8e90421.js"
+    "static/js/main.6e2f63d7.js"
   ]
 }
